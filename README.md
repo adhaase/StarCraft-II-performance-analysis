@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-# StarCraft-II-performance-analysis
-A JavaScript app to log your StarCraft II matches and view statistical analysis over match data.
-=======
 # StarCraft II performance analysis
 A PHP logging app to log your StarCraft II matches and view statistical analysis over match data.
 
 **localhost/StarCraft-II-performance-analysis** using **XAMPP**.
 
-This program is still under development!
->>>>>>> 43da9a96656e2fa7682904aa9680195b58d45cc7
+This program is still under development! The user logging system currently works, and I'm working on the statistical logging work per user as well as the CSS. The end program will host on GitHub instead of a local host. 

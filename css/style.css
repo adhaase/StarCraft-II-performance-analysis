@@ -1,118 +1,165 @@
+/*style.css*/
 
-/* 
-I'm using the Reset Stylesheet from
-html5doctor.com
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html { 
+  background: url(../images/background.jpg) no-repeat center center fixed; 
+  /* full screen background image */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-body {
-    line-height:1;
+.main-wrapper {
+  margin: 0 auto;
+  width: 1000px;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-    display:block;
-}
-
-nav ul {
-    list-style:none;
-}
-
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+.main-wrapper a { /*Home icon on the left*/
+  font-family: arial;
+  font-size: 40px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+  text-decoration: none;
 }
 
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+header nav { /* header navigation bar */
+  width: 100%;
+  height: 60px;
+  background-color: rgb(4, 0, 66);
 }
 
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
+header nav ul {
+  /*unordered list within navigation - move left*/
+  float: left;
 }
 
-del {
-    text-decoration: line-through;
+header nav ul li {
+  /*list within unordered list navigation - move left*/
+  float: left;
+  list-style: none;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+header nav ul li a { /* home button/icon in nav bar TODO ??????*/
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  line-height: 63px;
 }
 
-table {
-    border-collapse:collapse;
-    border-spacing:0;
+header .nav-login {
+  float: right;
 }
 
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+header .nav-login form {
+  float: left;
+  padding-top: 15px;
 }
 
-input, select {
-    vertical-align:middle;
+header .nav-login form input { /*fields where the user inputs their username/password */
+  float: left;
+  width: 140px;
+  height: 30px;
+  padding: 0px 10px;
+  margin-right: 10px;
+  border: none;
+  background-color: #fff;
+  font-family: arial;
+  font-size: 14px;
+  color: #111;
+  line-height: 30px;
 }
 
-/* --------- END of HTML5 Stylesheet --------- */
-/* --------- MY CODE --------- */
-
-.main-wrapper {
-    margin: 0 auto;
-    width: 1000px;
+header .nav-login form button { /* login button */
+  float: left;
+  width: 60px;
+  height: 30px;
+  margin-right: 10px;
+  border: none;
+  background-color: #f3f3f3;
+  font-family: arial;
+  font-size: 14px;
+  color: #111;
+  cursor: pointer;
 }
 
-body {
-    background-color: #ccc;
+header .nav-login form button:hover {
+  background-color: #ccc;
 }
 
-header nav {
-    width: 100%;
-    height: 60px;
-    background-color: #fff;
+header .nav-login a { /* signup button */
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: none;
+  float: left;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  line-height: 63px;
+  cursor: pointer;
+}
+
+.main-container {
+  padding-top: 40px;
+}
+
+.main-container h2 {
+  font-family: arial;
+  font-size: 40px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h3 {
+  font-family: arial;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* signup.php */
+
+.signup-form {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.signup-form input {
+  width: 90%;
+  height: 40px;
+  padding: 0px 5%;
+  margin-bottom: 4px;
+  border: none;
+  background-color: #fff;
+  font-family: arial;
+  font-size: 16px;
+  color: #111;
+  line-height: 40px;
+}
+
+.signup-form button {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: 40px;
+  border: none;
+  background-color: #222;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #111;
 }
